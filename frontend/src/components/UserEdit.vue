@@ -99,11 +99,6 @@ export default {
     if (userData.photo) {
       formData.append('photo', userData.photo);
     }
- for (let [key, value] of formData.entries()) {
-      console.log(`${key}: ${value}`);
-    }
-
-    console.log('FormData:', formData);
 
     axios.put(`http://localhost:8000/api/users/${this.userId}`, formData, config)
       .then(response => {
@@ -112,7 +107,6 @@ export default {
       })
       .catch(error => {
         console.error('Error updating user:', error.response ? error.response.data : error.message);
-        alert('There was an error updating the user.');
       });
   }
 

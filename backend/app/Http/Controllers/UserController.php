@@ -80,7 +80,6 @@ class UserController extends Controller
     
      public function update(Request $request, $id)
     {
-        \Log::info('Update request data: ', $request->all());
         $request->validate([
             'name' => 'required|string|max:255',
             'age' => 'required|integer',
