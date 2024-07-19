@@ -22,7 +22,7 @@ This project demonstrates a full-stack application with CRUD (Create, Read, Upda
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/your-repository.git
+    git clone https://github.com/yogapriya-star/laravel-vue.git
     cd your-repository/backend
     ```
 
